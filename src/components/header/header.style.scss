@@ -22,8 +22,14 @@
     ul{
       display: flex;
       list-style: none;
+      li{
+        cursor: pointer;
+      }
       li:not(:last-child){
         margin-right: 2rem;
+      }
+      Link{
+        cursor: pointer;
       }
     }
   }
