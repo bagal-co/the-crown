@@ -3,17 +3,15 @@
   margin: 0 auto;
 }
 .header {
-  background-color: lightblue;
-  // height: 70px;
-  // width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // margin-bottom: 25px;
+  margin-bottom: 1rem;
+  width: 100%;
 
   .logo-container {
     height: 100%;
     width: 70px;
-    // padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   nav{
     display: flex;

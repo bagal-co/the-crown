@@ -1,5 +1,5 @@
 .collection-item {
-  width: 22%;
+  width: 23%;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -10,8 +10,8 @@
     height: 95%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 5px;
-    border: 1px solid orangered;
   }
 
   .collection-footer {
