@@ -8,7 +8,6 @@
 
   .logo-container {
     height: 100%;
-    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,12 +23,37 @@
       list-style: none;
       li{
         cursor: pointer;
+        text-decoration: none;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: bolder;
       }
       li:not(:last-child){
         margin-right: 2rem;
       }
-      Link{
+      a{
+        position: relative;
         cursor: pointer;
+        padding-bottom: 3px;
+        &:focus{
+          outline: none;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #4285f4;
+          transform: scale(0);
+          transition: all .4s ease-in-out;
+          transform-origin: left;
+        }
+        &:hover::after,
+        &:focus::after{
+          transform: scale(1);
+        }
       }
     }
   }

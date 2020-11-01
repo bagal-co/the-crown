@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 const Header = ({ currentUser }) => {
   return (
     <div className="header">
-      <nav>
+      <nav className="container">
       <Link className="logo-container" to="/">
         <Logo className="logo"/>
       </Link>
@@ -22,7 +22,7 @@ const Header = ({ currentUser }) => {
 
           {
             currentUser ?
-            <li className="option" onClick={() => auth.signOut()}>Sign Out</li>
+            <Link className="option" onClick={() => auth.signOut()}>Sign Out</Link>
                         :
             <li>
               <Link className="option" to="/signin">Sign In</Link>
