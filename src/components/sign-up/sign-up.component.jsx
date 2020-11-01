@@ -34,7 +34,7 @@ class SignUp extends React.Component {
         confirmPassword: ''
       });
     }catch(error){
-      console.log(error);
+      console.error(error);
     }
   }
   handleChange = (e) => {
@@ -45,7 +45,7 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return(
       <div className="sign-up">
-        <h2 className="title">Do no have a account</h2>
+        <h2 className="title">Do not have an account</h2>
         <span>Sign up with your email</span>
 
         <form action="#" className="sign-up-from" onSubmit={this.handleSubmit}>
@@ -55,9 +55,9 @@ class SignUp extends React.Component {
 
           <FormInput type="password" name="password" value={password} onChange={this.handleChange} label="Password" required/>
 
-          <FormInput type="password" name="password" value={confirmPassword} onChange={this.handleChange} label="Confirm Password" required/>
+          <FormInput type="password" name="confirmPassword" value={confirmPassword} onChange={this.handleChange} label="Confirm Password" required/>
 
-          <Button type="submit">Sign In</Button>
+          <Button type="submit" role="button">Sign Up</Button>
         </form>
       </div>
     );

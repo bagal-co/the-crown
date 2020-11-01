@@ -3,9 +3,9 @@ import './button.style.scss';
 
 const Button = ({ children, googleSignIn, ...ohterProps }) => {
   return(
-    <div className={`${googleSignIn ? "google-sign-in" : ""} custom-button`} {...ohterProps}>
+    <button className={`${googleSignIn ? "google-sign-in" : ""} custom-button`} {...ohterProps}>
       {children}
-    </div>
+    </button>
   );
 }
 
