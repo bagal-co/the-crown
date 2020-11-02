@@ -5,6 +5,7 @@
 .header {
   margin-bottom: 1rem;
   width: 100%;
+  border-bottom: 2px solid #4285f4;
 
   .logo-container {
     height: 100%;
@@ -16,10 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 7.5rem;
 
     ul{
       display: flex;
+      align-items: center;
       list-style: none;
       li{
         cursor: pointer;
