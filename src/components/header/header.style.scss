@@ -13,11 +13,14 @@
     align-items: center;
     justify-content: center;
   }
+  .logo-container:focus{
+    outline: none;
+  }
   nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 7.5rem;
+    height: 7rem;
 
     ul{
       display: flex;
