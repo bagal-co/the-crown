@@ -45,8 +45,8 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return(
       <div className="sign-up">
-        <h2 className="title">Do not have an account</h2>
-        <span>Sign up with your email</span>
+        <h2 className="title">Sign up and enjoy shopping</h2>
+        
 
         <form action="#" className="sign-up-from" onSubmit={this.handleSubmit}>
           <FormInput type="text" name="displayName" value={displayName} onChange={this.handleChange} label="Display Name" required/>

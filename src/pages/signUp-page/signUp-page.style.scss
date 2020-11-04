@@ -1,0 +1,20 @@
+.signUp-page{
+  width: 42rem;
+  height: 60rem;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  box-shadow: 0 .4rem .8rem rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+
+  .signup-link{
+    margin-top: 2rem;
+    padding-bottom: .8rem;
+    align-self: flex-start;
+    a{
+      color: #4285f4;
+    }
+  }
+}

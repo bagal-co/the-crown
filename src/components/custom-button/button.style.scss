@@ -1,9 +1,9 @@
 .custom-button {
-  $blue-color: #4285f4;
-  $dark-color: #222;
+  $blue-color: #0466c8;
+  $dark-color: #011627;
   cursor: pointer;
   display: inline-block;
-  min-width: 165px;
+  width: 100%;
   width: auto;
   height: 50px;
   letter-spacing: 1px;
@@ -24,14 +24,17 @@
     color: #222;
   }
   &.google-sign-in{
+    display: block;
+    width: 100%;
     background-color: $blue-color;
     border: 1px solid $blue-color;
     color: #fff;
     transition: all .4s ease-in-out;
 
     &:hover{
-      background-color: transparent;
-      color: $dark-color;
+      background-color: $blue-color;
+      color: #fff;
+      filter: saturate(120%);
     }
   }
 

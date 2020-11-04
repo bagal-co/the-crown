@@ -4,16 +4,16 @@
 
   .title {
     font-size: 38px;
-    margin: 0 auto 30px;
+    margin: 0 auto 3rem;
   }
 
   .items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1.4rem;
 
     & .collection-item {
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 }

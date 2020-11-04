@@ -30,7 +30,7 @@ const Header = ({ currentUser, hidden }) => {
             <Link className="option" onClick={() => auth.signOut()}>Sign Out</Link>
                         :
             <li>
-              <Link className="option" to="/signin">Sign In</Link>
+              <Link className="option btn" to="/signin">Log in</Link>
             </li> 
           }
           <CartIcon />
