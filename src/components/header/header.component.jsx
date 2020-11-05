@@ -22,7 +22,7 @@ const Header = ({ currentUser, hidden }) => {
             <Link className="option" to="/shop">Shop</Link>
           </li>
           <li>
-            <Link className="option" to="/shop">Contact</Link>
+            <Link className="option" to="/shop">Contact Us</Link>
           </li>
 
           {
