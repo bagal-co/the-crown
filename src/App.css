@@ -24,3 +24,7 @@ a{
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+ul{
+  list-style: none;
+}

@@ -18,6 +18,8 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
+import Footer from './components/footer/footer.component';
+
 
 class App extends React.Component {
   
@@ -59,6 +61,7 @@ class App extends React.Component {
             <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to="/"/>) : (<SignInPage />)}/>
             <Route exact path='/signup' render={() => this.props.currentUser ? (<Redirect to="/"/>) : (<SignUpPage />)}/>
           </Switch>
+          <Footer/>
         </Router>
       </div>
     );
